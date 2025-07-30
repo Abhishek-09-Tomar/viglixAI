@@ -56,27 +56,66 @@
 SentinelAI/
 │
 ├── backend/
-│   ├── app.py                # Flask or Node.js backend
-│   ├── ml_model/             # Trained ML models
-│   └── scripts/              # IP blocking, OSINT integration
+│   ├── app.py                        # Flask or Node.js backend
+│   ├── ml_model/                     # Trained ML models
+│   │   ├── isolation_forest_model.h5 # Isolation Forest model
+│   │   ├── lstm_model.h5             # LSTM model
+│   │   └── random_forest_model.pkl    # Random Forest model
+│   └── scripts/                      # IP blocking, OSINT integration
+│       ├── ip_blocker.py             # Script to block malicious IPs
+│       └── osint_integration.py       # OSINT tool integration
 │
 ├── frontend/
-│   ├── dashboard/            # React or Streamlit UI
-│   └── assets/               # Static files and styles
+│   ├── dashboard/                    # React UI
+│   │   ├── src/                      # React source files
+│   │   │   ├── components/           # React components
+│   │   │   ├── App.js                 # Main app component
+│   │   │   └── index.js               # Entry point
+│   │   ├── public/                   # Static files
+│   │   └── package.json              # Frontend dependencies
+│   └── assets/                       # Static files and styles
+│       ├── styles/                   # CSS styles
+│       └── images/                   # Image assets
 │
 ├── osint_toolkit/
-│   ├── spiderfoot_runner.py  # Automation scripts for OSINT
-│   └── sherlock_runner.py
+│   ├── spiderfoot_runner.py          # Automation scripts for OSINT
+│   ├── sherlock_runner.py             # Script to run Sherlock
+│   └── whois_lookup.py               # Whois lookup script
 │
 ├── logging_monitoring/
-│   ├── logstash.conf         # Logstash configuration
-│   └── dashboards/           # Kibana dashboards
+│   ├── logstash.conf                 # Logstash configuration
+│   ├── elasticsearch_config.json      # Elasticsearch configuration
+│   └── dashboards/                   # Kibana dashboards
+│       ├── attack_dashboard.json      # Dashboard for attack visualization
+│       └── logs_dashboard.json        # Dashboard for log monitoring
 │
 ├── scripts/
-│   ├── hardening.sh          # Auto-hardening bash script
-│   └── deploy.sh             # Deployment automation
+│   ├── hardening.sh                  # Auto-hardening bash script
+│   ├── deploy.sh                     # Deployment automation
+│   └── setup_environment.sh           # Script to set up the environment
 │
-└── README.md                 # Project documentation
+├── alerts/
+│   ├── discord_alert.py              # Discord alert integration
+│   ├── telegram_alert.py             # Telegram alert integration
+│   └── slack_alert.py                # Slack alert integration
+│
+├── honeypots/                        # Honeypot configurations
+│   ├── fake_login_panel.py           # Fake login panel script
+│   └── honeypot_config.json          # Configuration for honeypots
+│
+├── geo_intel/                       # Geo-Intel tracking
+│   ├── geo_tracking.py               # Script for geo-tracking
+│   └── geo_config.json               # Configuration for geo-intel
+│
+├── threat_db/                       # Attacker fingerprint archive
+│   ├── fingerprints.json              # JSON file for fingerprints
+│   └── threat_models.py               # Script to manage threat models
+│
+├── legal_logger/                     # Chain-of-custody audit logs
+│   ├── audit_log.py                  # Script to log audit trails
+│   └── legal_log.json                # JSON file for legal logs
+│
+└── README.md                         # Project documentation
 
 ```
 
