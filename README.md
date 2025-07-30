@@ -54,12 +54,30 @@
 
 ```
 SentinelAI/
+│
 ├── backend/
+│   ├── app.py                # Flask or Node.js backend
+│   ├── ml_model/             # Trained ML models
+│   └── scripts/              # IP blocking, OSINT integration
+│
 ├── frontend/
+│   ├── dashboard/            # React or Streamlit UI
+│   └── assets/               # Static files and styles
+│
 ├── osint_toolkit/
+│   ├── spiderfoot_runner.py  # Automation scripts for OSINT
+│   └── sherlock_runner.py
+│
 ├── logging_monitoring/
+│   ├── logstash.conf         # Logstash configuration
+│   └── dashboards/           # Kibana dashboards
+│
 ├── scripts/
-└── README.md
+│   ├── hardening.sh          # Auto-hardening bash script
+│   └── deploy.sh             # Deployment automation
+│
+└── README.md                 # Project documentation
+
 ```
 
 ---
