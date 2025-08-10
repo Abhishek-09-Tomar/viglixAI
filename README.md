@@ -1,6 +1,6 @@
 ###  Ongoing Project it's not complete right now ! I'm working on it. Just explore my other projects.
 
-###  viglixAI: AI-Powered Cyber Defense System
+###  SentrixisAI: AI-Powered Cyber Defense System
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Linux%2FWeb-blue" />
@@ -12,7 +12,7 @@
 
 ##  Project Overview
 
-**viglixAI** is an autonomous system to detect, analyze, and respond to cyberattacks in real-time using AI/ML, OSINT, and automation.
+**SentrixisAI** is an autonomous system to detect, analyze, and respond to cyberattacks in real-time using AI/ML, OSINT, and automation.
 
 ---
 
@@ -55,7 +55,7 @@
 ## Project Structure
 
 ```
-viglixAI/
+SentrixisAI/
 │
 ├── backend/
 │   ├── app.py                        # Flask or Node.js backend
