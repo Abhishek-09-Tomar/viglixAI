@@ -1,6 +1,6 @@
 ###  Ongoing Project it's not complete right now ! I'm working on it. Just explore my other projects.
 
-###  SentinelAI: AI-Powered Cyber Defense System
+###  viglixAI: AI-Powered Cyber Defense System
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Linux%2FWeb-blue" />
@@ -12,7 +12,7 @@
 
 ##  Project Overview
 
-**SentinelAI** is an autonomous system to detect, analyze, and respond to cyberattacks in real-time using AI/ML, OSINT, and automation.
+**viglixAI** is an autonomous system to detect, analyze, and respond to cyberattacks in real-time using AI/ML, OSINT, and automation.
 
 ---
 
@@ -55,7 +55,7 @@
 ## Project Structure
 
 ```
-SentinelAI/
+viglixAI/
 │
 ├── backend/
 │   ├── app.py                        # Flask or Node.js backend
